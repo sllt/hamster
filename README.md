@@ -1,6 +1,6 @@
 # Hamster
 
-TODO: Write a gem description
+A Web Framework,like rails.
 
 ## Installation
 
@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+
 
 ## Contributing
 
