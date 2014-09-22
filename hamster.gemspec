@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Hamster::VERSION
   spec.authors       = ["sllt"]
   spec.email         = ["shenlongml@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{A Web framework. like rails.}
+  spec.description   = %q{a simple web framework }
   spec.homepage      = ""
   spec.license       = "MIT"
 
