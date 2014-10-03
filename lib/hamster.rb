@@ -3,6 +3,8 @@ require "hamster/routing"
 require "hamster/util"
 require "hamster/dependencies"
 require "hamster/controller"
+require "hamster/file_model"
+require "hamster/sqlite_model"
 module Hamster
   class Application
     def call(env)
@@ -10,12 +12,8 @@ module Hamster
         return [404,
           {'Content-Type' => 'text/html'}, []]
       end
-      klass, act = get_controller_and_action(env)
-      controller = klass.new(env)
-      text = controller.send act
-      [200, {'Content-Type' => 'text/html'},
-        [text] ]
+      rack_app = get_rack_app env
+      rack_app.call env
     end
   end
-
 end
